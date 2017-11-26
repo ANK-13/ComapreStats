@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+	<script src="js/modernizr.js"></script> <!-- Modernizr -->
+  	
+	<title>Literacy Comparison</title>
+	<script>
+		function myfunct()
+		{
+			document.getElementById('abc1').style.display = "block";
+			document.getElementById('abc2').style.display = "block";
+			document.getElementById('abc3').style.display = "block";
+			document.getElementById('abc4').style.display = "block";
+			document.getElementById('abc5').style.display = "block";
+			document.getElementById('abc6').style.display = "block";
+			document.getElementById('abc7').style.display = "block";
+			document.getElementById('abc8').style.display = "block";
+			document.getElementById('abc9').style.display = "block";
+			document.getElementById('abc10').style.display = "block";
+		}
+	</script>
+</head>
+<body>
+	<section class="cd-intro">
+		<h1>Literacy Comparison</h1>
+	</section> <!-- .cd-intro -->
+
+	<section class="cd-products-comparison-table">
+		<header>
+			<h2>Compare States</h2>
+
+			<div class="actions">
+				<a href="#0" class="reset">Reset</a>
+				<a href="#0" class="filter" onclick="myfunct()">Filter</a>
+			</div>
+		</header>
+
+		<div class="cd-products-table">
+		    <!-- <div class="features">
+				<div class="top-info">Models</div>
+				<ul class="cd-features-list">
+					<img src="img/product.png" alt="product image">
+				</ul>
+			</div>  -->
+			
+			<div class="cd-products-wrapper">
+				<ul class="cd-products-columns">
+					<li class="product">
+						<div class="top-info">
+							<div class="check"></div>
+							<img src="img/logo/maha1.png" alt="product image">
+							<h3>Maharastra</h3>
+						</div> <!-- .top-info -->
+
+						<ul class="cd-features-list" style="display: none" id="abc1">
+							<li><img src="img/mahaInfo.jpg" alt="product image"></li>
+						</ul>
+					</li> <!-- .product -->
+
+					<li class="product">
+						<div class="top-info">
+							<div class="check"></div>
+							<img src="img/logo/Bihar1.png" alt="product image">
+							<h3>Bihar</h3>
+						</div> <!-- .top-info -->
+
+						<ul class="cd-features-list" style="display: none" id="abc2">
+							<li><img src="img/biharInfo.jpg" alt="product image"></li>
+						</ul>
+					</li> <!-- .product -->
+
+					<li class="product">
+						<div class="top-info">
+							<div class="check"></div>
+							<img src="img/logo/assam1.png" alt="product image">
+							<h3>Assam</h3>
+						</div> <!-- .top-info -->
+
+						<ul class="cd-features-list" style="display: none" id="abc3">
+							<li><img src="img/assamInfo.jpg" alt="product image"></li>
+						</ul>
+					</li> <!-- .product -->
+
+					
+				</ul> <!-- .cd-products-columns -->
+			</div> <!-- .cd-products-wrapper -->
+			
+			<ul class="cd-table-navigation">
+				<li><a href="#0" class="prev inactive">Prev</a></li>
+				<li><a href="#0" class="next">Next</a></li>
+			</ul>
+		</div> <!-- .cd-products-table -->
+	</section> <!-- .cd-products-comparison-table -->
+<script src="js/jquery-2.1.4.js"></script>
+<script src="js/main.js"></script> <!-- Resource jQuery -->
+</body>
+</html>
